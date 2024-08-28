@@ -1,0 +1,23 @@
+version: "2"
+services:
+    netsim:
+        image: cli-tool:centos7
+        container_name: "netsim"
+        ports:
+            - "32942:22"
+        networks:
+            - default
+    gateway:
+        image: cli-tool:centos7
+        container_name: "gateway"
+        ports:
+            - "32943:22"
+        networks:
+            - default
+    ms1:
+        image: cli-tool:centos7
+        container_name: "ms1"
+        ports:
+            - "32944:22"
+        networks:
+            - default

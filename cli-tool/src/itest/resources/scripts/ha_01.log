@@ -1,0 +1,76 @@
+17-05-30 16:21:15,756 EXCEPTION
+17-05-30 16:21:15,756 EXCEPTION STACK TRACE
+17-05-30 16:21:15,756 EXCEPTION -----------
+17-05-30 16:21:15,757 EXCEPTION
+17-05-30 16:21:15,757 EXCEPTION [7] LINE 291 OF FILE /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/lib/filesystem.py
+17-05-30 16:21:15,757 EXCEPTION     LINE: raise RuntimeError("Unable to delete file {0} on host {1}. Reason {2}".format(file_path, host, response.stdout))
+17-05-30 16:21:15,757 EXCEPTION [6] LINE 356 OF FILE /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/lib/filesystem.py
+17-05-30 16:21:15,757 EXCEPTION     LINE: return task_callback_remote(*args)
+17-05-30 16:21:15,757 EXCEPTION [5] LINE 371 OF FILE /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/lib/filesystem.py
+17-05-30 16:21:15,758 EXCEPTION     LINE: return _perform_file_operation_on_ms(delete_remote_file, delete_file, file_path)
+17-05-30 16:21:15,758 EXCEPTION [4] LINE 508 OF FILE /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/profile.py
+17-05-30 16:21:15,758 EXCEPTION     LINE: delete_file_on_ms(self.ident_file_path)
+17-05-30 16:21:15,758 EXCEPTION [3] LINE 539 OF FILE /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/profile.py
+17-05-30 16:21:15,758 EXCEPTION     LINE: self.remove()
+17-05-30 16:21:15,758 EXCEPTION [2] LINE 108 OF FILE /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/profile.py
+17-05-30 16:21:15,758 EXCEPTION     LINE: self.teardown(remove=True)
+17-05-30 16:21:15,759 EXCEPTION [1] LINE 94 OF FILE /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/bin/daemon.py
+17-05-30 16:21:15,759 EXCEPTION     LINE: result = func(*args)
+17-05-30 16:21:15,759 EXCEPTION
+17-05-30 16:21:15,759 DEBUG   RETURN CODE: Main process is exiting with return code 5
+17-05-30 16:21:15,760 INFO    Terminating all threads and shutting down script...
+17-05-30 16:21:15,764 DEBUG     Entering multitasking.terminate_threads()...
+17-05-30 16:21:15,764 DEBUG   Notifying all threads that they need to terminate as quickly as possible (this can take a bit of time)...
+17-05-30 16:21:15,764 DEBUG   Attempting to join 0 running threads...
+17-05-30 16:21:15,764 DEBUG   Making a best-effort attempt to join all running threads...
+17-05-30 16:21:15,765 DEBUG     Unable to join Thread-3 on first join attempt...
+17-05-30 16:21:15,765 DEBUG     Unable to join Thread-4 on first join attempt...
+17-05-30 16:21:15,765 DEBUG   Unable to join 2 threads...
+17-05-30 16:21:17,596 DEBUG   Persistence cleared successfully [index 0]
+17-05-30 16:21:17,597 DEBUG   Persistence cleared successfully [index 32]
+17-05-30 16:21:17,597 DEBUG   Shutting down logging subsystem
+17-05-30 16:41:40,041 DEBUG   Starting ha_01 [tool] ['HA_01', 'ha_01']
+17-05-30 16:41:40,041 SYSLOG  Starting ha_01 ['HA_01', 'ha_01']
+17-05-30 16:41:40,042 DEBUG   Initializing client Redis connection to DB index 0 running on local port 955
+17-05-30 16:41:40,042 DEBUG   Executing command on localhost: '/opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/external_sources/db/redis-cli -p 955 ping' [timeout 60s]
+17-05-30 16:41:40,053 DEBUG   Executed command '/opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/external_sources/db/redis-cli -p 955 ping' on localhost [elapsed time 0.010s]
+17-05-30 16:41:40,053 DEBUG     Command return code: 0
+17-05-30 16:41:40,054 DEBUG     Command output: PONG
+17-05-30 16:41:40,058 DEBUG   Initializing client Redis connection to DB index 32 running on local port 955
+17-05-30 16:41:40,059 DEBUG   Executing command on localhost: '/opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/external_sources/db/redis-cli -p 955 ping' [timeout 60s]
+17-05-30 16:41:40,069 DEBUG   Executed command '/opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/external_sources/db/redis-cli -p 955 ping' on localhost [elapsed time 0.009s]
+17-05-30 16:41:40,069 DEBUG     Command return code: 0
+17-05-30 16:41:40,069 DEBUG     Command output: PONG
+17-05-30 16:41:53,290 DEBUG   Executing command on localhost: 'rpm -qa | grep ERICtorutilitiesinternal_CXP9030579' [timeout 60s]
+17-05-30 16:41:53,903 DEBUG   Executed command 'rpm -qa | grep ERICtorutilitiesinternal_CXP9030579' on localhost [elapsed time 0.612s]
+17-05-30 16:41:53,904 DEBUG     Command return code: 0
+17-05-30 16:41:53,904 DEBUG     Command output: ERICtorutilitiesinternal_CXP9030579-4.44.50-1.noarch
+17-05-30 16:41:53,906 DEBUG   Attempting to acquire persistence-backed mutex mutex-workload_profile_list
+17-05-30 16:41:53,907 DEBUG     Persisting active_workload_profiles = set(['HA_01']) [never expires]
+17-05-30 16:41:53,909 DEBUG   Attempting to acquire persistence-backed mutex mutex-workload_profile_status_list
+17-05-30 16:41:53,910 DEBUG     Persisting active_status_workload_profiles = set(['HA_01-status']) [never expires]
+17-05-30 16:41:53,911 DEBUG     Persisting HA_01 = HA_01 [never expires]
+17-05-30 16:41:53,911 DEBUG     Persisting HA_01-status = <enmutils_int.lib.profile.StatusProfile object at 0x7f75b92699d0> [never expires]
+17-05-30 16:41:53,912 DEBUG   Executing command on localhost: 'ps --no-headers -p 12867 -o stat' [timeout 60s]
+17-05-30 16:41:53,991 DEBUG   Executed command 'ps --no-headers -p 12867 -o stat' on localhost [elapsed time 0.078s]
+17-05-30 16:41:53,991 DEBUG     Command return code: 0
+17-05-30 16:41:53,991 DEBUG     Command output: Sl
+17-05-30 16:41:53,991 DEBUG   Process ID 12867 is running on the MS
+17-05-30 16:41:53,997 DEBUG     Persisting HA_01 = HA_01 [never expires]
+17-05-30 16:41:53,997 DEBUG     Persisting HA_01-status = <enmutils_int.lib.profile.StatusProfile object at 0x7f75b08d24d0> [never expires]
+17-05-30 16:42:00,538 DEBUG   Nodes used by HA: ['ieatnetsimv016-07_LTE22ERBS00002', 'ieatnetsimv016-07_LTE22ERBS00012', 'ieatnetsimv016-07_LTE22ERBS00018', 'ieatnetsimv016-07_LTE22ERBS00040', 'ieat
+tsimv016-07_LTE22ERBS00086', 'ieatnetsimv016-07_LTE22ERBS00095', 'ieatnetsimv016-07_LTE22ERBS00106', 'ieatnetsimv016-07_LTE22ERBS00109', 'ieatnetsimv016-07_LTE22ERBS00149', 'ieatnetsimv016-07_LTE24E
+S00002', 'ieatnetsimv016-07_LTE24ERBS00004', 'ieatnetsimv016-07_LTE24ERBS00014', 'ieatnetsimv016-07_LTE24ERBS00022', 'ieatnetsimv016-07_LTE24ERBS00034', 'ieatnetsimv016-07_LTE24ERBS00039', 'ieatnets
+v016-07_LTE24ERBS00051', 'ieatnetsimv016-07_LTE24ERBS00087', 'ieatnetsimv016-07_LTE24ERBS00089', 'ieatnetsimv016-07_LTE24ERBS00101', 'ieatnetsimv016-07_LTE24ERBS00102', 'ieatnetsimv016-07_LTE24ERBS0
+11', 'ieatnetsimv016-07_LTE24ERBS00125', 'ieatnetsimv016-07_LTE24ERBS00137', 'ieatnetsimv016-07_LTE23ERBS00002', 'ieatnetsimv016-07_LTE23ERBS00018', 'ieatnetsimv016-07_LTE23ERBS00056', 'ieatnetsimv0
+-07_LTE23ERBS00060', 'ieatnetsimv016-07_LTE23ERBS00086', 'ieatnetsimv016-07_LTE23ERBS00087', 'ieatnetsimv016-07_LTE23ERBS00093', 'ieatnetsimv016-07_LTE23ERBS00100', 'ieatnetsimv016-07_LTE23ERBS00102
+ 'ieatnetsimv016-07_LTE23ERBS00115', 'ieatnetsimv016-07_LTE23ERBS00126', 'ieatnetsimv016-07_LTE23ERBS00157', 'ieatnetsimv016-07_LTE21ERBS00011', 'ieatnetsimv016-07_LTE21ERBS00019', 'ieatnetsimv016-0
+LTE21ERBS00021', 'ieatnetsimv016-07_LTE21ERBS00031', 'ieatnetsimv016-07_LTE21ERBS00042', 'ieatnetsimv016-07_LTE21ERBS00079', 'ieatnetsimv016-07_LTE21ERBS00089', 'ieatnetsimv016-07_LTE21ERBS00097', '
+atnetsimv016-07_LTE21ERBS00098', 'ieatnetsimv016-07_LTE21ERBS00118', 'ieatnetsimv016-07_LTE21ERBS00120', 'ieatnetsimv016-07_LTE21ERBS00123', 'ieatnetsimv016-07_LTE21ERBS00143', 'ieatnetsimv016-07_LT
+1ERBS00145', 'ieatnetsimv016-07_LTE21ERBS00160']
+a_01.log" 461L, 54259C                                                                                                                                                              297,1         66%
+
+
+
+
+

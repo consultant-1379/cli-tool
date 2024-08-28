@@ -1,0 +1,53 @@
+[
+    {
+        "hostname": "ms1",
+        "ip": "192.168.0.42",
+        "ports": {
+            "ssh": 22
+        },
+        "type": "ms",
+        "users": [
+            {
+                "password": "12shroot",
+                "type": "admin",
+                "username": "root"
+            }
+        ]
+    },
+    {
+        "hostname": "netsim",
+        "ip": "192.168.0.2",
+        "type": "NETSIM",
+        "users": [
+            {
+                "username": "netsim",
+                "password": "netsim",
+                "type": "oper"
+            },
+            {
+                "username": "root",
+                "password": "shroot",
+                "type": "admin"
+            }
+
+        ],
+        "ports": {
+            "ssh": 22
+        }
+    },
+    {
+        "hostname": "gateway",
+        "ip": "192.168.0.1",
+        "type": "GATEWAY",
+        "users": [
+            {
+                "username": "root",
+                "password": "shroot",
+                "type": "admin"
+            }
+        ],
+        "ports": {
+            "ssh": 22
+        }
+    }
+]
